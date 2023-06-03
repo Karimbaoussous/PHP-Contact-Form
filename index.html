@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio KARIM BAOUSSOUS </title>
+    <link rel="icon" type="image/x-ico" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">-->
+</head>
+<body>
+   <div id="zoomPortrait"> <img id="portrait" src="./img/photo.png"></div>
+   <div id="mot"></div>
+    <div id="contactMeContainer"><img id="contactMe" src="./img/contactMeModif.png"></div>
+   
+  
+    <form action="connect.php" method="post" enctype="multipart/form-data">
+     <fieldset>
+        <legend>Remplir le formulaire SVP</legend>
+       
+        <label>Nom:</label> <input class="input-enlarged" title="Entrez votre nom ici" type="text" placeholder="Ecrire ici vote nom réel" name="nom" required>
+        <br><label>Prénom:</label> <input class="input-enlarged" title="Entrez votre Prénom ici" type="text" placeholder="Ecrire ici vote prénom réel" name="prenom" required>
+       <br> <label>E-mail:</label> <input class="input-enlarged" title="Essayer de ne pas mettre un e-mail adresse incorrect" type="text" value="@gmail.com" placeholder="Ecrire votre e-mail" name="email" required>
+        
+           
+           <br><label>Année de naissance:</label><input class="input-enlarged" title="Clic ici pour choisir votre Année de naissance" type="date"  name="birthday" required>
+           <br> <label>Numéro de téléphone:</label><input class="input-enlarged" title="Entrez votre Numéro de téléphone ici" type="tel" placeholder="Tapez votre numéro de téléphone" name="tele" required>
+            <br><label>Photo de profil:</label><input class="input-enlarged" title="Clic ici pour inserer votre photo de profil"  type="file" name="photo" required>
+       
+    </fieldset>
+       <div id="submitContainer"><button id="submit" title="Vérifier tous les champs avant de cliquer ici"><span>envoyer </span></div>
+      
+    </form>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
